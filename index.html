@@ -130,6 +130,17 @@
     }
     .photo-grid img:hover { filter: grayscale(0%); }
     
+    /* Statement */
+    .statement-section { background: var(--white); }
+    .statement {
+      font-size: clamp(32px, 6vw, 72px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      max-width: 1200px;
+    }
+    .statement em { font-style: normal; color: var(--gray); }
+    
     /* Skills */
     .skills-section { background: var(--white); min-height: auto; }
     .skills-list { list-style: none; border-top: 1px solid rgba(0,0,0,0.1); }
@@ -323,6 +334,15 @@
         <img src="photo7.png" alt="">
         <img src="photo8.png" alt="">
       </div>
+    </section>
+    
+    <!-- Statement -->
+    <section class="statement-section">
+      <p class="statement">
+        Cool exterior, <em>soft interior.</em><br>
+        Minimalist aesthetic. <em>All black everything.</em><br>
+        Direct communication. <em>No fluff.</em>
+      </p>
     </section>
     
     <!-- Skills with Usecases -->
