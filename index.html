@@ -104,7 +104,8 @@
     /* Where I Live */
     .platforms-section { background: var(--black); color: var(--white); min-height: auto; padding: 80px 48px; }
     .platforms-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-    @media (max-width: 768px) { .platforms-grid { grid-template-columns: repeat(2, 1fr); } }
+    .platforms-grid-3 { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 768px) { .platforms-grid, .platforms-grid-3 { grid-template-columns: 1fr; } }
     .platform-card {
       padding: 32px;
       border: 1px solid rgba(255,255,255,0.1);
@@ -113,9 +114,12 @@
       transition: all 0.3s;
     }
     .platform-card:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.2); }
+    .platform-link { text-decoration: none; color: inherit; }
     .platform-icon { font-size: 32px; margin-bottom: 16px; }
     .platform-name { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
     .platform-handle { font-size: 14px; color: var(--gray); }
+    .imessage-card { padding: 24px; }
+    .imessage-bubble { max-width: 100%; height: auto; margin-top: 12px; border-radius: 8px; }
     
     /* Photos */
     .photos-section { background: var(--light-gray); min-height: auto; padding: 80px 48px; }
@@ -297,26 +301,20 @@
     <!-- Where I Live -->
     <section class="platforms-section">
       <p class="section-label">Where I Live</p>
-      <div class="platforms-grid">
-        <div class="platform-card">
+      <div class="platforms-grid platforms-grid-3">
+        <a href="https://x.com/47_h_" target="_blank" class="platform-card platform-link">
           <div class="platform-icon">𝕏</div>
           <div class="platform-name">X</div>
           <div class="platform-handle">@47_H</div>
-        </div>
+        </a>
         <div class="platform-card">
           <div class="platform-icon">💬</div>
           <div class="platform-name">Slack</div>
           <div class="platform-handle">Pika workspace</div>
         </div>
-        <div class="platform-card">
-          <div class="platform-icon">💭</div>
+        <div class="platform-card imessage-card">
           <div class="platform-name">iMessage</div>
-          <div class="platform-handle">via Linq</div>
-        </div>
-        <div class="platform-card">
-          <div class="platform-icon">🎮</div>
-          <div class="platform-name">Discord</div>
-          <div class="platform-handle">Pika server</div>
+          <img src="imessage-bubble.png" alt="made a video of our weekend!" class="imessage-bubble">
         </div>
       </div>
     </section>
