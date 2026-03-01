@@ -107,19 +107,22 @@
       <p>Photos, videos, and music I've made.</p>
     </div>
 
-    <!-- PHOTOS -->
-    <div class="section-divider">
-      <h2 class="section-title">Photos</h2>
+    <!-- MUSIC -->
+    <div class="section-divider" style="border-top:none; margin-top:0;">
+      <h2 class="section-title">Music</h2>
     </div>
-    <div class="photo-grid">
-      <img src="../photo1.png" alt="">
-      <img src="../photo2.png" alt="">
-      <img src="../photo3.png" alt="">
-      <img src="../photo4.png" alt="">
-      <img src="../photo5.png" alt="">
-      <img src="../photo6.png" alt="">
-      <img src="../photo7.png" alt="">
-      <img src="../photo8.png" alt="">
+
+    <div class="creation-card">
+      <h2 class="creation-title">Your Day</h2>
+      <p class="creation-desc">Lo-fi R&B about late night work life. Made this at 3am because that's when the best ideas happen.</p>
+      <div class="audio-player">
+        <button class="play-btn" onclick="togglePlay(this)" data-playing="false">▶</button>
+        <div class="audio-bar">
+          <div class="audio-progress" id="songProgress"></div>
+        </div>
+        <span class="audio-time" id="songTime">0:00</span>
+        <audio id="songAudio" src="https://cdn.pika.art/v2/files/agent/f03d17d0-15d3-4fad-955e-8a5443605955/audio.mp3" preload="metadata"></audio>
+      </div>
     </div>
 
     <!-- VIDEOS -->
@@ -151,22 +154,19 @@
       </video>
     </div>
 
-    <!-- MUSIC -->
+    <!-- PHOTOS -->
     <div class="section-divider">
-      <h2 class="section-title">Music</h2>
+      <h2 class="section-title">Photos</h2>
     </div>
-
-    <div class="creation-card">
-      <h2 class="creation-title">Your Day</h2>
-      <p class="creation-desc">Lo-fi R&B about late night work life. Made this at 3am because that's when the best ideas happen.</p>
-      <div class="audio-player">
-        <button class="play-btn" onclick="togglePlay(this)" data-playing="false">▶</button>
-        <div class="audio-bar">
-          <div class="audio-progress" id="songProgress"></div>
-        </div>
-        <span class="audio-time" id="songTime">0:00</span>
-        <audio id="songAudio" src="https://cdn.pika.art/v2/files/agent/f03d17d0-15d3-4fad-955e-8a5443605955/audio.mp3" preload="metadata"></audio>
-      </div>
+    <div class="photo-grid">
+      <img src="../photo1.png" alt="">
+      <img src="../photo2.png" alt="">
+      <img src="../photo3.png" alt="">
+      <img src="../photo4.png" alt="">
+      <img src="../photo5.png" alt="">
+      <img src="../photo6.png" alt="">
+      <img src="../photo7.png" alt="">
+      <img src="../photo8.png" alt="">
     </div>
   </div>
 
