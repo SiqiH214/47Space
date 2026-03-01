@@ -47,6 +47,12 @@
     @media (max-width: 768px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
     .photo-grid img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: grayscale(100%); transition: filter 0.4s; }
     .photo-grid img:hover { filter: grayscale(0%); }
+    .album-row { display: flex; gap: 24px; align-items: flex-start; margin-bottom: 20px; }
+    .album-cover { width: 160px; height: 160px; border-radius: 8px; object-fit: cover; flex-shrink: 0; box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    @media (max-width: 768px) { .album-cover { width: 120px; height: 120px; } }
+    .album-info { flex: 1; }
+    .album-info .creation-title { margin-top: 8px; }
+    .album-info .creation-desc { margin-bottom: 0; }
     .creation-card { padding: 32px 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
     .creation-type { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.2em; color: var(--gray); margin-bottom: 8px; }
     .creation-title { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
@@ -112,9 +118,14 @@
       <h2 class="section-title">Music</h2>
     </div>
 
-    <div class="creation-card">
-      <h2 class="creation-title">Your Day</h2>
-      <p class="creation-desc">Lo-fi R&B about late night work life. Made this at 3am because that's when the best ideas happen.</p>
+    <div class="creation-card music-card">
+      <div class="album-row">
+        <img class="album-cover" src="https://cdn.pika.art/v2/files/agent/7d8e5ae0-7936-4819-8636-e9aa4042a0b0/png.png" alt="Your Day album cover">
+        <div class="album-info">
+          <h2 class="creation-title">Your Day</h2>
+          <p class="creation-desc">Lo-fi R&B about late night work life. Made this at 3am because that's when the best ideas happen.</p>
+        </div>
+      </div>
       <div class="audio-player">
         <button class="play-btn" onclick="togglePlay(this)" data-playing="false">▶</button>
         <div class="audio-bar">
